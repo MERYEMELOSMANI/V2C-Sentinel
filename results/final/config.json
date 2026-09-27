@@ -1,0 +1,53 @@
+{
+  "version": "1.0.0",
+  "timestamp": "2026-09-27T12:26:35Z",
+  "local_model": {
+    "file": "models/local_iforest.joblib",
+    "algorithm": "LogisticRegression",
+    "note": "Misnamed file; actually sklearn LogisticRegression trained on train split"
+  },
+  "cloud_model": {
+    "file": "models/cloud_rf.joblib",
+    "algorithm": "RandomForestClassifier(n_estimators=50, max_depth=15)"
+  },
+  "local_proc_time_s": 0.005,
+  "cloud_proc_time_s": 0.01,
+  "deadlines_s": [
+    0.1,
+    0.15,
+    0.2,
+    0.3
+  ],
+  "request_budgets_per_sec": [
+    1.0,
+    5.0,
+    10.0,
+    50.0
+  ],
+  "periodic_intervals_s": null,
+  "random_probabilities": null,
+  "suspicion_threshold_percentile": 90,
+  "suspicion_threshold_value": 4.891700142733211e-06,
+  "false_alert_grouping_window_s": 1.0,
+  "episode_gap_tolerance_s": 0.5,
+  "num_random_seeds": 10,
+  "num_periodic_offsets": 10,
+  "network_traces": [
+    {
+      "name": "urban_n78",
+      "path": "data/raw/cicv5g/data/Urban road/2-n78/Urban road_n78.csv",
+      "format": "csv_excel"
+    }
+  ],
+  "policies": [
+    "local_only",
+    "strong_local",
+    "cloud_unlimited",
+    "periodic",
+    "random",
+    "suspicion",
+    "combined"
+  ],
+  "total_runs": 2032,
+  "total_time_s": 1860.7842922210693
+}

@@ -1,0 +1,7 @@
+recording_id,file_name,type,split
+normal_01,ambient_dyno_drive_basic_long.csv,normal,train
+normal_02,ambient_dyno_drive_radio_infotainment.csv,normal,dev
+normal_03,ambient_dyno_drive_winter.csv,normal,test
+attack_01,correlated_signal_attack_1_masquerade.csv,attack,train
+attack_02,correlated_signal_attack_2_masquerade.csv,attack,dev
+attack_03,correlated_signal_attack_3_masquerade.csv,attack,test

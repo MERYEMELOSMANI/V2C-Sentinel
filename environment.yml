@@ -1,0 +1,21 @@
+name: v2c-sentinel
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - numpy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - jupyterlab
+  - pyyaml
+  - tqdm
+  - joblib
+  - pyarrow
+  - openpyxl
+  - pip:
+      - torch
+      - torchaudio
+      - torchvision
+      - python-can

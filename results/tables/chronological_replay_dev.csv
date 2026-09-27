@@ -1,0 +1,6 @@
+policy,requests,request_rate_%,false_alerts,attack_episodes,timely_50ms,timely_150ms,missed
+cloud_always,15243,1.626305109049823,47807,1,1,1,0
+delay_only,7029,0.7499375852201802,47807,1,1,1,0
+local_only,0,0.0,47807,1,1,1,0
+proposed,7029,0.7499375852201802,47807,1,1,1,0
+suspicion_only,12949,1.3815538186109138,47807,1,1,1,0
