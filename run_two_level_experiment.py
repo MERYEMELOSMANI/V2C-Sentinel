@@ -105,12 +105,12 @@ def simulate_two_level(df_recording, delay_provider, bucket):
     request_log = []
     pending_replies = []
     seq = 0
-    
+
     for row in df_recording.itertuples():
         idx = row.Index
         obs_time = row.timestamp
         local_done_time = obs_time + CONFIG['local_proc_time_s']
-        
+
         while pending_replies and pending_replies[0][0] <= local_done_time:
             _, _, reply = heapq.heappop(pending_replies)
             if reply['pred'] == 1:
@@ -119,18 +119,18 @@ def simulate_two_level(df_recording, delay_provider, bucket):
                     'source': 'level2_cloud',
                     'window_idx': reply['window_idx']
                 })
-        
+
         if row.local_pred == 1:
             warnings.append({
                 'time': local_done_time,
                 'source': 'level1_local',
                 'window_idx': idx
             })
-            
+
             if bucket.try_consume(local_done_time):
                 actual_delay = delay_provider.get_delay_at(local_done_time)
                 cloud_return_time = local_done_time + actual_delay + CONFIG['cloud_proc_time_s']
-                
+
                 reply = {
                     'return_time': cloud_return_time,
                     'pred': row.cloud_pred,
@@ -138,7 +138,7 @@ def simulate_two_level(df_recording, delay_provider, bucket):
                 }
                 heapq.heappush(pending_replies, (cloud_return_time, seq, reply))
                 seq += 1
-                
+
                 request_log.append({
                     'sent': local_done_time,
                     'returned': cloud_return_time,
@@ -159,43 +159,43 @@ def evaluate_run(recording, warnings_df, episodes, deadline):
     metrics = {}
     metrics['n_messages'] = len(recording)
     metrics['attack_episodes'] = len(episodes)
-    
+
     rec_duration = recording['timestamp'].max() - recording['timestamp'].min()
     attack_duration = sum(ep['end'] - ep['onset'] for ep in episodes)
     normal_duration_hr = max((rec_duration - attack_duration) / 3600.0, 0.001)
-    
+
     for level in ['level1_local', 'level2_cloud']:
         if warnings_df.empty:
             level_warnings = pd.DataFrame(columns=['time', 'source', 'window_idx'])
         else:
             level_warnings = warnings_df[warnings_df['source'] == level]
-        
+
         timely = 0
         delays = []
-        
+
         for ep in episodes:
             ep_mask = (recording['timestamp'] >= ep['onset']) & (recording['timestamp'] <= ep['end'])
             ep_indices = recording[ep_mask].index
-            
+
             if level_warnings.empty:
                 delays.append(float('nan'))
                 continue
-                
+
             ep_warns = level_warnings[level_warnings['window_idx'].isin(ep_indices)]
             valid_warns = ep_warns[recording.loc[ep_warns['window_idx'], 'true_label'].values == 1]
-            
+
             if valid_warns.empty:
                 delays.append(float('nan'))
                 continue
-                
+
             delay = valid_warns['time'].min() - ep['onset']
             delays.append(delay)
             if delay <= deadline:
                 timely += 1
-                
+
         metrics[f'{level}_timely'] = timely
         metrics[f'{level}_delay'] = np.nanmean(delays) if delays and not all(np.isnan(d) for d in delays) else float('nan')
-        
+
         if not level_warnings.empty:
             warn_labels = recording.loc[level_warnings['window_idx'], 'true_label'].values
             is_false = warn_labels == 0
@@ -203,19 +203,19 @@ def evaluate_run(recording, warnings_df, episodes, deadline):
             grouped_false = group_alerts(false_times, CONFIG['false_alert_grouping_window_s'])
         else:
             grouped_false = 0
-            
+
         metrics[f'{level}_false_per_hr'] = grouped_false / normal_duration_hr
 
     return metrics
 
 def main():
     CONFIG['timestamp'] = time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime())
-    
+
     print("Loading data...")
     preds = pd.read_csv("results/tables/all_predictions.csv")
     dev_preds = preds[preds['split'] == 'dev']
     test_preds = preds[preds['split'] == 'test']
-    
+
     trace_cfg = CONFIG['network_traces'][0]
     try:
         trace_df = pd.read_excel(trace_cfg['path'], engine='openpyxl')
@@ -227,12 +227,12 @@ def main():
                 trace_df = trace_df.rename(columns={col: 'pub_time(ms)'})
             if 'delay' in col.lower() and 'ms' in col.lower():
                 trace_df = trace_df.rename(columns={col: 'delay(ms)'})
-    
+
     trace_df['pub_time(ms)'] = pd.to_numeric(trace_df['pub_time(ms)'], errors='coerce')
     trace_df['delay(ms)'] = pd.to_numeric(trace_df['delay(ms)'], errors='coerce')
     trace_df = trace_df.dropna(subset=['pub_time(ms)', 'delay(ms)'])
     provider = TraceProvider(trace_df)
-    
+
     recordings = {}
     for split_name, split_df in [('dev', dev_preds), ('test', test_preds)]:
         for rec_id, group in split_df.groupby('recording_id'):
@@ -250,25 +250,25 @@ def main():
     for deadline in CONFIG['deadlines_s']:
         for budget in CONFIG['request_budgets_per_sec']:
             jobs.append({'budget': budget, 'deadline': deadline})
-            
+
     print(f"Running {len(jobs)} jobs * {len(recordings)} recordings...")
-    
+
     for i, job in enumerate(jobs):
         b_val = job['budget']
         d_val = job['deadline']
-        
+
         for rec_key, rec_data in recordings.items():
             df_rec = rec_data['df']
             eps = rec_data['episodes']
-            
+
             if b_val == "unlimited":
                 bucket = UnlimitedBucket()
             else:
                 bucket = TokenBucket(b_val)
-                
+
             warnings, reqs = simulate_two_level(df_rec, provider, bucket)
             metrics = evaluate_run(df_rec, warnings, eps, d_val)
-            
+
             row = {
                 'split': rec_data['split'],
                 'recording_id': rec_data['recording_id'],
@@ -278,19 +278,71 @@ def main():
             }
             row.update(metrics)
             all_rows.append(row)
-            
+
     runs_df = pd.DataFrame(all_rows)
     runs_df.to_csv(RESULTS_DIR / "all_runs.csv", index=False)
-    
-    # Summary
-    numeric_cols = [c for c in runs_df.columns if c not in ['split', 'recording_id', 'budget', 'deadline_s']]
-    
-    summary = runs_df.groupby(['split', 'budget', 'deadline_s'])[numeric_cols].mean().reset_index()
+
+    # ========================================================================
+    # CORRECTED SUMMARY — proper aggregation
+    # ========================================================================
+    # Split attack recordings from normal recordings so that:
+    #   - detection rate  = timely detections / total attack episodes  (attack recs only)
+    #   - false-alert rate = mean FA/hr across normal recordings       (normal recs only)
+    #   - detection delay  = mean delay across attack recordings only
+    # ========================================================================
+
+    summary_rows = []
+    for (split, budget, deadline), grp in runs_df.groupby(['split', 'budget', 'deadline_s']):
+        attack_recs = grp[grp['attack_episodes'] > 0]
+        normal_recs = grp[grp['attack_episodes'] == 0]
+
+        total_episodes = attack_recs['attack_episodes'].sum()
+
+        row = {
+            'split': split,
+            'budget': budget,
+            'deadline_s': deadline,
+            'attack_episodes': int(total_episodes),
+            'n_attack_recordings': len(attack_recs),
+            'n_normal_recordings': len(normal_recs),
+        }
+
+        for level in ['level1_local', 'level2_cloud']:
+            # Detection rate — only from attack recordings
+            timely_sum = attack_recs[f'{level}_timely'].sum()
+            row[f'{level}_detect_rate'] = timely_sum / total_episodes if total_episodes > 0 else 0.0
+            row[f'{level}_timely'] = int(timely_sum)
+
+            # Detection delay — mean across attack recordings (NaN-safe)
+            delays = attack_recs[f'{level}_delay'].dropna()
+            row[f'{level}_delay'] = delays.mean() if len(delays) > 0 else float('nan')
+
+            # False-alert rate — mean across normal recordings
+            if len(normal_recs) > 0:
+                row[f'{level}_false_per_hr'] = normal_recs[f'{level}_false_per_hr'].mean()
+            else:
+                # Fallback: use all recordings if no pure-normal ones exist
+                row[f'{level}_false_per_hr'] = grp[f'{level}_false_per_hr'].mean()
+
+        row['total_requests'] = int(grp['total_requests'].sum())
+        summary_rows.append(row)
+
+    summary = pd.DataFrame(summary_rows)
     summary.to_csv(RESULTS_DIR / "summary.csv", index=False)
-    
+
+    # ========================================================================
+    # Print key results
+    # ========================================================================
     print("\nKEY RESULTS (Dev Split, 150ms deadline)")
     dev_150 = summary[(summary['split'] == 'dev') & (summary['deadline_s'] == 0.150)].copy()
-    display_cols = ['budget', 'level1_local_timely', 'level2_cloud_timely', 'level1_local_false_per_hr', 'level2_cloud_false_per_hr']
+    display_cols = [
+        'budget', 'attack_episodes',
+        'level1_local_detect_rate', 'level1_local_delay',
+        'level1_local_false_per_hr',
+        'level2_cloud_detect_rate', 'level2_cloud_delay',
+        'level2_cloud_false_per_hr',
+        'total_requests'
+    ]
     print(dev_150[display_cols].to_string(index=False))
 
 if __name__ == "__main__":
