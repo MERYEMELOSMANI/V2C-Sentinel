@@ -127,9 +127,13 @@ def main():
         ax_b.set_ylabel('Total Cloud Requests Sent')
         ax_b.set_title(f'Cloud Requests — {title}')
 
-    plt.tight_layout()
+    plt.tight_layout(rect=[0, 0.05, 1, 1])
+    fig2.text(0.5, 0.02, 
+              "Note: Raw request counts differ across splits because recording durations differ; budget is expressed in requests per second.", 
+              ha='center', fontsize=9, style='italic', color='gray')
     plt.savefig(FIGURES_DIR / "cloud_budget_usage.png", dpi=300, bbox_inches='tight')
-    print("Saved figures/final/cloud_budget_usage.png")
+    plt.savefig(FIGURES_DIR / "cloud_budget_usage.pdf", bbox_inches='tight')
+    print("Saved figures/final/cloud_budget_usage.png/.pdf")
 
     # ================================================================
     # Table: Corrected paper-ready summary (both splits)
