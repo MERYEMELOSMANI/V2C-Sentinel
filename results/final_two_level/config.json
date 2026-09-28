@@ -1,0 +1,26 @@
+{
+  "version": "2.0.0",
+  "timestamp": "2026-09-27T15:09:40Z",
+  "provenance_note": "Configuration reconstructed on 2026-09-28 from the frozen run_two_level_experiment.py constants; the timestamp is the saved all_runs.csv modification time.",
+  "local_proc_time_s": 0.005,
+  "cloud_proc_time_s": 0.01,
+  "deadlines_s": [
+    0.15,
+    0.3
+  ],
+  "request_budgets_per_sec": [
+    1.0,
+    5.0,
+    10.0,
+    50.0,
+    "unlimited"
+  ],
+  "false_alert_grouping_window_s": 1.0,
+  "episode_gap_tolerance_s": 0.5,
+  "network_traces": [
+    {
+      "name": "urban_n78",
+      "path": "data/raw/cicv5g/data/Urban road/2-n78/Urban road_n78.csv"
+    }
+  ]
+}

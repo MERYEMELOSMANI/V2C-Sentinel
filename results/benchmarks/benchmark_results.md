@@ -24,7 +24,7 @@
 ## Model Sizes
 | Model | File size |
 |---|---|
-| local_iforest.joblib (LR) | 1,055 bytes |
+| local_lr.joblib (LR) | 1,055 bytes |
 | cloud_rf.joblib (RF) | 52,953 bytes |
 | scaler.joblib | 1,759 bytes |
 

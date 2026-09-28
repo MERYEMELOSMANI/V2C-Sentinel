@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import os
 from pathlib import Path
-from sklearn.ensemble import IsolationForest, RandomForestClassifier
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import StandardScaler
 from joblib import dump, load
@@ -77,7 +77,7 @@ def run_experiment():
     
     # Save models
     dump(scaler, "models/scaler.joblib")
-    dump(local_model, "models/local_iforest.joblib")
+    dump(local_model, "models/local_lr.joblib")
     dump(cloud_model, "models/cloud_rf.joblib")
     
     # Select threshold using DEV set for local detector

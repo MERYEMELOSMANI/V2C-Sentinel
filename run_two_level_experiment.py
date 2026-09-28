@@ -12,6 +12,7 @@ import pandas as pd
 import numpy as np
 from pathlib import Path
 import heapq
+import json
 import time
 import os
 
@@ -281,6 +282,8 @@ def main():
 
     runs_df = pd.DataFrame(all_rows)
     runs_df.to_csv(RESULTS_DIR / "all_runs.csv", index=False)
+    with (RESULTS_DIR / "config.json").open("w", encoding="utf-8") as handle:
+        json.dump(CONFIG, handle, indent=2)
 
     # ========================================================================
     # CORRECTED SUMMARY — proper aggregation

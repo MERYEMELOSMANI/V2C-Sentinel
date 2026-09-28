@@ -1,89 +1,93 @@
-# Evaluation Protocol — FROZEN 2026-09-27
+# Evaluation Protocol — Frozen 2026-09-27, reconciled 2026-09-28
 
-This document defines the evaluation setup. After this point, no settings
-may be tuned to improve final results.
+This document describes the **canonical two-level experiment** used by the current paper. The reconciliation on 2026-09-28 corrected stale paths and parameters that still described an earlier unified-policy experiment; it did not change the saved two-level results.
 
-## Data Splits
+## Data splits
 
-| Role | Normal Recording | Attack Recording | Purpose |
+| Role | Normal recording | Attack recording | Purpose |
 |---|---|---|---|
-| **Train** | ambient_dyno_drive_basic_long.csv | correlated_signal_attack_1_masquerade.csv | Model training only |
-| **Dev** | ambient_dyno_drive_radio_infotainment.csv | correlated_signal_attack_2_masquerade.csv | Threshold selection, policy tuning |
-| **Test** | ambient_dyno_drive_winter.csv | correlated_signal_attack_3_masquerade.csv | Final evaluation (see disclosure below) |
+| Train | `ambient_dyno_drive_basic_long.csv` | `correlated_signal_attack_1_masquerade.csv` | Fit scaler and both classifiers |
+| Development | `ambient_dyno_drive_radio_infotainment.csv` | `correlated_signal_attack_2_masquerade.csv` | Select the local threshold and interpret behavior |
+| Test | `ambient_dyno_drive_winter.csv` | `correlated_signal_attack_3_masquerade.csv` | Final reported evaluation, subject to prior-use disclosure |
+
+Whole recordings remain together. Frames are not randomly divided across splits.
 
 ### Prior-use disclosure
-The test recordings (normal_03, attack_03) were previously inspected during
-development of `run_final_test.py` and `run_chronological_replay.py`. Results
-from those prior scripts are archived in `archive/frozen_2026-09-27/`. No
-model training or threshold selection used test data. The unified experiment
-uses a completely rewritten simulation engine, but the test recordings are
-not fully untouched. We disclose this and report dev results alongside test.
+
+The test recordings were inspected during development of preliminary scripts now preserved under `archive/frozen_2026-09-27/` and `legacy/scripts/`. They were not used to fit either model or choose the local threshold, but they are not a pristine blind holdout. Development and test results are therefore reported separately.
 
 ### Source-recording independence
-All three correlated_signal_attack recordings (1, 2, 3) are from the same
-vehicle and attack methodology (ROAD dataset). They differ in timing and
-injection parameters but share the same CAN bus setup. We do not claim they
-are fully independent attack scenarios; we claim they are distinct recordings
-with different attack windows.
 
-## Settings Chosen on Dev Data
+The three correlated-signal attack recordings come from the same vehicle and attack methodology. They are distinct recordings with different attack windows, not independent attack families or vehicles.
 
-| Parameter | Value | How chosen |
-|---|---|---|
-| Suspicion threshold | 90th percentile of dev `local_score` | Fixed before test evaluation |
-| False-alert grouping window | 1.0 second | Defined a priori (sub-second warnings = same alerting event) |
-| Episode gap tolerance | 0.5 seconds | From ROAD dataset attack structure |
-| Local processing time | 5 ms | Assumed (not measured on target hardware) |
-| Cloud processing time | 10 ms | Assumed (not measured on target hardware) |
+## Model and feature settings
 
-## Network Traces
+| Item | Canonical value |
+|---|---|
+| Features | `ID` and columns beginning with `Signal_` |
+| Missing signal value | `-1` |
+| Excluded inputs | `Label`, `Time` |
+| Scaling | `StandardScaler`, fitted on combined training frames |
+| Level-1 model | `LogisticRegression(random_state=42, max_iter=1000)` |
+| Level-2 model | `RandomForestClassifier(n_estimators=50, max_depth=15, random_state=42)` |
+| Local positive threshold | 95th percentile of local scores on the normal development recording |
 
-| Trace | Source | Alignment |
-|---|---|---|
-| Urban road n78 | CICV5G dataset, Tongji University | Mapped by simulation time (wraps around trace). No synchronized recording exists between CICV5G and ROAD — the delay trace is applied via time-based lookup, not temporal alignment. |
+Both models are supervised. “Local” and “cloud” describe their roles in the replay; both are executed on the development computer.
 
-## Experimental Parameters
+## Two-level replay
+
+A local positive creates an immediate Level-1 warning and becomes eligible for Level-2 confirmation. A token bucket admits or rejects the cloud request. Rejected candidates are skipped rather than queued. An admitted request receives the CICV5G delay selected by simulation time plus the assumed cloud-processing time. A positive forest result creates a Level-2 confirmation.
 
 | Parameter | Values |
 |---|---|
-| Deadlines | 100 ms, 150 ms, 200 ms, 300 ms |
-| Request budgets | 1, 5, 10, 50 req/s |
-| Random seeds | 0–9 (10 seeds per random policy configuration) |
-| Periodic offsets | 10 evenly spaced within one interval |
-| Policies | local_only, strong_local, cloud_unlimited, periodic, random, suspicion, combined |
+| Local processing time | 5 ms, assumed |
+| Cloud processing time | 10 ms, assumed |
+| Reporting deadlines | 150 ms and 300 ms |
+| Request budgets | 1, 5, 10, 50 requests/s and unrestricted |
+| Token-bucket burst | `max(2, 0.1 × rate)` |
+| False-alert grouping window | 1.0 s |
+| Episode gap tolerance | 0.5 s |
 
-### Deadline justification
-150 ms is used as the primary reporting deadline. It is presented as an
-**experimental parameter**, not an application-specific safety requirement.
-Rationale: it approximates the time for a CAN gateway to receive a message,
-forward it for analysis, wait for a remote response, and act on the result
-before the next relevant message cycle. Additional deadlines (100, 200, 300 ms)
-are tested to show sensitivity.
+The reporting deadlines evaluate the same generated alert history; they are not independent experiment repetitions.
 
-## Processing Time Assumptions vs. Measurements
+## Network trace
 
-The `local_proc_time` (5 ms) and `cloud_proc_time` (10 ms) are **assumed
-constants**, not measured on target automotive hardware. The benchmark script
-(`benchmark_models.py`) measures actual inference latency on the development
-machine, which will be reported separately. Development-machine timings do
-not establish performance on a constrained vehicle gateway.
+The replay uses the CICV5G urban-road n78 trace. Simulation time wraps over the trace duration, and the first sample at or after the wrapped request time supplies the communication delay. ROAD and CICV5G are not synchronized. Only one fixed trace phase is evaluated.
 
 ## Metrics
 
 | Metric | Definition |
 |---|---|
-| Timely detection | Attack episode with ≥1 true-positive warning within deadline of onset |
-| Detection delay | Time from episode onset to first true-positive warning |
-| Missed episode | Attack episode with no true-positive warning at any time |
-| Eventual detection | Episode detected at any time (including after deadline) |
-| Grouped false alerts/hr | False warnings grouped within 1s, divided by normal driving hours |
-| Request rate | Actual cloud requests / total messages × 100% |
-| Requests/sec | Actual cloud requests / recording duration |
-| Late replies | Cloud replies arriving after the deadline |
+| Timely detection | Episode with at least one true-positive warning no later than the deadline after episode onset |
+| Detection delay | Time from episode onset to its first true-positive warning |
+| Eventual detection | Episode with a true-positive warning, including one after the deadline |
+| Grouped false alerts/hour | False warnings on a separate normal recording, grouped by the fixed 1 s rule and divided by normal exposure |
+| Request count | Admitted cloud requests over the normal and attack recording in a split |
+| Actual requests/second | Request count divided by combined split exposure |
 
-## Reproducibility
+Warnings are associated with the true label of their originating message. A benign warning inside an attack interval cannot count as attack detection.
 
-- All random seeds are fixed and recorded per run
-- Configuration saved as `results/final/config.json`
-- Individual run results saved as `results/final/all_runs.csv`
-- Aggregated results saved as `results/final/summary.csv`
+## Evidence boundary
+
+Each evaluated split contains one attack episode. Development contributes 390.456 s of normal exposure and test contributes 47.731 s, for 438.187 s total. The study does not support population-level detection rates, a general zero-false-positive claim, or deployment and safety claims.
+
+The 5 ms and 10 ms processing constants are assumptions. Development-machine benchmark measurements are contextual and do not establish embedded-vehicle performance.
+
+## Reproducibility and source of truth
+
+The canonical sequence is:
+
+```powershell
+python run_pipeline.py
+python run_two_level_experiment.py
+python validate_project.py
+python generate_two_level_figures.py
+```
+
+The numerical source of truth is:
+
+- `results/final_two_level/all_runs.csv`
+- `results/final_two_level/summary.csv`
+- `results/final_two_level/paper_table.csv`
+
+Files under `legacy/` and `results/legacy_mixed_outputs/` are retained for traceability and must not be used as current paper evidence.

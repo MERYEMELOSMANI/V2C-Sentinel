@@ -14,5 +14,19 @@ results/final/all_runs.csv
 **/all_runs.csv
 **/replay_results.csv
 
+paper/working/packages/
+poster/working/node_modules/
+paper/working/mpl-cache/
+
+# Generated paper/poster review artifacts (final deliverables live outside working/)
+paper/working/*.png
+paper/working/*.pdf
+paper/working/*.docx
+paper/working/qa-current/
+poster/working/*.png
+poster/working/*.pdf
+poster/working/*.pptx
+poster/working/.codex-finalizer/
+
 .DS_Store
 Thumbs.db

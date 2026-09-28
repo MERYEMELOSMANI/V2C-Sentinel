@@ -1,0 +1,14 @@
+{
+  "exposure_seconds": {
+    "dev": 418.68252301216125,
+    "test": 64.6944271326065
+  },
+  "figures": [
+    "fig1_architecture",
+    "fig2_latency",
+    "fig3_false_alerts",
+    "fig4_request_rates"
+  ],
+  "source": "results/final_two_level/summary.csv, results/final_two_level/all_runs.csv, results/tables/all_predictions.csv",
+  "note": "No error bars: one observed attack episode per split, not independent repeated trials."
+}

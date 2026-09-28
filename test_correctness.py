@@ -67,10 +67,10 @@ FAIL_COUNT = 0
 def assert_test(condition, name, detail=""):
     global PASS_COUNT, FAIL_COUNT
     if condition:
-        print(f"  ✓ PASS: {name}")
+        print(f"  PASS: {name}")
         PASS_COUNT += 1
     else:
-        print(f"  ✗ FAIL: {name} — {detail}")
+        print(f"  FAIL: {name} - {detail}")
         FAIL_COUNT += 1
 
 
@@ -78,7 +78,7 @@ def assert_test(condition, name, detail=""):
 # TEST 1: Attack message receives timely positive cloud reply
 # ============================================================================
 def test_1_timely_cloud_detection():
-    print("\nTest 1: Timely positive cloud reply → timely detection")
+    print("\nTest 1: Timely positive cloud reply -> timely detection")
 
     # One attack message at t=1.0, cloud correctly predicts 1
     # Cloud delay: 50ms → returns at 1.0 + 0.005 + 0.050 + 0.010 = 1.065
@@ -118,7 +118,7 @@ def test_1_timely_cloud_detection():
 # TEST 2: Cloud reply arrives after deadline
 # ============================================================================
 def test_2_late_cloud_reply():
-    print("\nTest 2: Cloud reply after deadline → local fallback, not timely cloud")
+    print("\nTest 2: Cloud reply after deadline -> local fallback, not timely cloud")
 
     # Attack at t=1.0, local predicts 1, cloud predicts 1
     # Cloud delay: 200ms → returns at 1.0 + 0.005 + 0.200 + 0.010 = 1.215
@@ -230,7 +230,7 @@ def test_4_local_only_detection():
 # TEST 5: Periodic offsets produce different sample times
 # ============================================================================
 def test_5_periodic_offsets():
-    print("\nTest 5: Different periodic offsets → different sample times")
+    print("\nTest 5: Different periodic offsets -> different sample times")
 
     rec = make_recording(
         timestamps=[float(i) / 100.0 for i in range(100)],  # 0.00 to 0.99
@@ -379,10 +379,10 @@ def test_9_alert_grouping():
     assert_test(groups == 3, f"3 grouped alerts (got {groups})")
 
     # Empty
-    assert_test(group_alerts([], threshold=1.0) == 0, "Empty → 0 groups")
+    assert_test(group_alerts([], threshold=1.0) == 0, "Empty -> 0 groups")
 
     # Single
-    assert_test(group_alerts([5.0], threshold=1.0) == 1, "Single → 1 group")
+    assert_test(group_alerts([5.0], threshold=1.0) == 1, "Single -> 1 group")
 
 
 # ============================================================================
@@ -409,8 +409,8 @@ if __name__ == '__main__':
     print("=" * 60)
 
     if FAIL_COUNT > 0:
-        print("\n*** CORRECTNESS TESTS FAILED — DO NOT PROCEED ***")
+        print("\n*** CORRECTNESS TESTS FAILED - DO NOT PROCEED ***")
         sys.exit(1)
     else:
-        print("\n✓ All correctness tests passed. Safe to proceed with full experiment.")
+        print("\nAll correctness tests passed. Safe to proceed with full experiment.")
         sys.exit(0)

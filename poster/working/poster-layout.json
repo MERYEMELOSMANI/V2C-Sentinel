@@ -1,0 +1,4181 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/phckab",
+    "id": "phckab",
+    "slide": 1,
+    "layoutId": "97576925-8e0d-487f-b4ee-83a225f9079e",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "e835c5bb-49cf-49b8-b011-c369ecf1ff8c",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 4494,
+      "height": 3179
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Arial"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "97576925-8e0d-487f-b4ee-83a225f9079e",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "e835c5bb-49cf-49b8-b011-c369ecf1ff8c",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "e835c5bb-49cf-49b8-b011-c369ecf1ff8c",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1srypgri",
+      "id": "1",
+      "bbox": [
+        0,
+        0,
+        4494,
+        430
+      ],
+      "geometry": "rect",
+      "fillColor": "#073B66",
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/e50zu18r",
+      "id": "2",
+      "bbox": [
+        0,
+        430,
+        4494,
+        12
+      ],
+      "geometry": "rect",
+      "fillColor": "#00A6D6",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/f69gn69c",
+      "id": "3",
+      "bbox": [
+        120,
+        55,
+        1160,
+        120
+      ],
+      "geometry": "rect",
+      "text": "V2C-Sentinel",
+      "textPreview": "V2C-Sentinel",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Arial",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "V2C-Sentinel"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "V2C-Sentinel",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#FFFFFF",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "V2C-Sentinel",
+              "typeface": "Arial",
+              "color": "#FFFFFF",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ovih0vq9",
+      "id": "4",
+      "bbox": [
+        120,
+        154,
+        3200,
+        118
+      ],
+      "geometry": "rect",
+      "text": "A Deadline-Aware Two-Level Architecture for CAN Masquerade Detection",
+      "textPreview": "A Deadline-Aware Two-Level Architecture for CAN Masquerade Detection",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Arial",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "A Deadline-Aware Two-Level Architecture for CAN Masquerade Detection"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "A Deadline-Aware Two-Level Architecture for CAN Masquerade Detection",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#FFFFFF",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "A Deadline-Aware Two-Level Architecture for CAN Masquerade Detection",
+              "typeface": "Arial",
+              "color": "#FFFFFF",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/pwbytg7u",
+      "id": "5",
+      "bbox": [
+        120,
+        285,
+        3250,
+        54
+      ],
+      "geometry": "rect",
+      "text": "Meryem EL OSMANI¹ · Nissrine BESTOUT¹ · Asmaa Berdigh²* · Khalid EL YASSINI³*",
+      "textPreview": "Meryem EL OSMANI¹ · Nissrine BESTOUT¹ · Asmaa Berdigh²* · Khalid EL YASSINI³*",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Arial",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Meryem EL OSMANI¹ · Nissrine BESTOUT¹ · Asmaa Berdigh²* · Khalid EL YASSINI³*"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Meryem EL OSMANI¹ · Nissrine BESTOUT¹ · Asmaa Berdigh²* · Khalid EL YASSINI³*",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#FFFFFF",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Meryem EL OSMANI¹ · Nissrine BESTOUT¹ · Asmaa Berdigh²* · Khalid EL YASSINI³*",
+              "typeface": "Arial",
+              "color": "#FFFFFF",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2t0zyl83",
+      "id": "6",
+      "bbox": [
+        120,
+        346,
+        4100,
+        45
+      ],
+      "geometry": "rect",
+      "text": "¹ Master IASDO, Faculty of Sciences Meknes, Moulay Ismail University  |  ² IA Laboratory, International University of Rabat  |  ³ Computer Science Department, Faculty of Sciences Meknes, Moulay Ismail University  |  * Supervisors",
+      "textPreview": "¹ Master IASDO, Faculty of Sciences Meknes, Moulay Ismail University  |  ² IA Laboratory, International University of Rabat  |  ³ Compute...",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Arial",
+        "color": "#DCEBF4",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "¹ Master IASDO, Faculty of Sciences Meknes, Moulay Ismail University  |  ² IA Laboratory, International University of Rabat  |  ³ Computer Science Department, Faculty of Sciences Meknes, Moulay Ismail University  |  * Supervisors"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "¹ Master IASDO, Faculty of Sciences Meknes, Moulay Ismail University  |  ² IA Laboratory, International University of Rabat  |  ³ Computer Science Department, Faculty of Sciences Meknes, Moulay Ismail University  |  * Supervisors",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#DCEBF4",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "¹ Master IASDO, Faculty of Sciences Meknes, Moulay Ismail University  |  ² IA Laboratory, International University of Rabat  |  ³ Computer Science Department, Faculty of Sciences Meknes, Moulay Ismail University  |  * Supervisors",
+              "typeface": "Arial",
+              "color": "#DCEBF4",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nu9grq9o",
+      "id": "7",
+      "bbox": [
+        3700,
+        65,
+        650,
+        45
+      ],
+      "geometry": "rect",
+      "text": "IEEE-STYLE A0 POSTER",
+      "textPreview": "IEEE-STYLE A0 POSTER",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Arial",
+        "color": "#A9DFF0",
+        "bold": true,
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "IEEE-STYLE A0 POSTER"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "IEEE-STYLE A0 POSTER",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#A9DFF0",
+            "bold": true,
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "IEEE-STYLE A0 POSTER",
+              "typeface": "Arial",
+              "color": "#A9DFF0",
+              "bold": true,
+              "alignment": "right"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4zyxorqp",
+      "id": "8",
+      "bbox": [
+        0,
+        442,
+        4494,
+        555
+      ],
+      "geometry": "rect",
+      "fillColor": "#F5F9FB",
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/507yhwra",
+      "id": "9",
+      "bbox": [
+        120,
+        505,
+        1920,
+        86
+      ],
+      "geometry": "rect",
+      "text": "Local warning first. Cloud confirmation only when requested.",
+      "textPreview": "Local warning first. Cloud confirmation only when requested.",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Arial",
+        "color": "#073B66",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Local warning first. Cloud confirmation only when requested."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Local warning first. Cloud confirmation only when requested.",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#073B66",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Local warning first. Cloud confirmation only when requested.",
+              "typeface": "Arial",
+              "color": "#073B66",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5sfilkre",
+      "id": "10",
+      "bbox": [
+        120,
+        605,
+        1830,
+        210
+      ],
+      "geometry": "rect",
+      "text": "V2C-Sentinel separates two operational decisions: an immediate level-1 warning from a local detector, and a level-2 confirmation returned through a replayed cellular-delay channel. A token bucket limits cloud requests and exposes the trade-off between confirmation speed and communication demand.",
+      "textPreview": "V2C-Sentinel separates two operational decisions: an immediate level-1 warning from a local detector, and a level-2 confirmation returned...",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Arial",
+        "color": "#17212B",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "V2C-Sentinel separates two operational decisions: an immediate level-1 warning from a local detector, and a level-2 confirmation returned through a replayed"
+          },
+          {
+            "index": 2,
+            "text": "cellular-delay channel. A token bucket limits cloud requests and exposes the trade-off between confirmation speed and communication demand."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "V2C-Sentinel separates two operational decisions: an immediate level-1 warning from a local detector, and a level-2 confirmation returned through a replayed cellular-delay channel. A token bucket limits cloud requests and exposes the trade-off between confirmation speed and communication demand.",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "V2C-Sentinel separates two operational decisions: an immediate level-1 warning from a local detector, and a level-2 confirmation returned through a replayed cellular-delay channel. A token bucket limits cloud requests and exposes the trade-off between confirmation speed and communication demand.",
+              "typeface": "Arial",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kr61sfat",
+      "id": "11",
+      "bbox": [
+        120,
+        842,
+        560,
+        88
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#0066A1",
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/jqx0ja98",
+      "id": "12",
+      "bbox": [
+        145,
+        862,
+        510,
+        45
+      ],
+      "geometry": "rect",
+      "text": "5 ms local warning",
+      "textPreview": "5 ms local warning",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Arial",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "5 ms local warning"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "5 ms local warning",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#FFFFFF",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "5 ms local warning",
+              "typeface": "Arial",
+              "color": "#FFFFFF",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ipojq5sn",
+      "id": "13",
+      "bbox": [
+        705,
+        842,
+        560,
+        88
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#F28C28",
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/tgz2pkra",
+      "id": "14",
+      "bbox": [
+        730,
+        862,
+        510,
+        45
+      ],
+      "geometry": "rect",
+      "text": "29–31 ms best confirmation",
+      "textPreview": "29–31 ms best confirmation",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Arial",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "29–31 ms best confirmation"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "29–31 ms best confirmation",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#FFFFFF",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "29–31 ms best confirmation",
+              "typeface": "Arial",
+              "color": "#FFFFFF",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/sfq1wfap",
+      "id": "15",
+      "bbox": [
+        1290,
+        842,
+        620,
+        88
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#073B66",
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7eh0nu94",
+      "id": "16",
+      "bbox": [
+        1315,
+        862,
+        570,
+        45
+      ],
+      "geometry": "rect",
+      "text": "150 / 300 ms deadlines",
+      "textPreview": "150 / 300 ms deadlines",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Arial",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "150 / 300 ms deadlines"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "150 / 300 ms deadlines",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#FFFFFF",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "150 / 300 ms deadlines",
+              "typeface": "Arial",
+              "color": "#FFFFFF",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 17,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/t8vilg36",
+      "id": "17",
+      "bbox": [
+        2050,
+        472,
+        2300,
+        500
+      ],
+      "alt": "Generated illustration of vehicle-local detection and selective cloud confirmation",
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "asset": {
+        "assetId": "5722135f-bed4-4ae5-85a3-36bf5012dc33",
+        "contentType": "image/png",
+        "byteLength": 1623804
+      }
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1kz2t4rm",
+      "id": "18",
+      "bbox": [
+        1490,
+        1040,
+        3,
+        1940
+      ],
+      "geometry": "rect",
+      "fillColor": "#CAD7E0",
+      "lineWidth": 0
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gjq10za1",
+      "id": "19",
+      "bbox": [
+        2945,
+        1040,
+        3,
+        1940
+      ],
+      "geometry": "rect",
+      "fillColor": "#CAD7E0",
+      "lineWidth": 0
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/0nylw3yx",
+      "id": "20",
+      "bbox": [
+        120,
+        1040,
+        1335,
+        58
+      ],
+      "geometry": "rect",
+      "text": "PROBLEM AND CONTRIBUTION",
+      "textPreview": "PROBLEM AND CONTRIBUTION",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Arial",
+        "color": "#0066A1",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "PROBLEM AND CONTRIBUTION"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "PROBLEM AND CONTRIBUTION",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#0066A1",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "PROBLEM AND CONTRIBUTION",
+              "typeface": "Arial",
+              "color": "#0066A1",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 21,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1orm58zi",
+      "id": "21",
+      "bbox": [
+        120,
+        1094,
+        1335,
+        7
+      ],
+      "geometry": "rect",
+      "fillColor": "#00A6D6",
+      "lineWidth": 0
+    },
+    {
+      "order": 22,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/elg3utg7",
+      "id": "22",
+      "bbox": [
+        120,
+        1120,
+        1335,
+        190
+      ],
+      "geometry": "rect",
+      "text": "CAN intrusion detection must distinguish malicious activity from legitimate vehicle traffic while producing a warning early enough to support action. A remote model can add evidence, but request admission and cellular delay determine when that evidence becomes available.",
+      "textPreview": "CAN intrusion detection must distinguish malicious activity from legitimate vehicle traffic while producing a warning early enough to sup...",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Arial",
+        "color": "#17212B",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "CAN intrusion detection must distinguish malicious activity from legitimate vehicle traffic while producing a warning early"
+          },
+          {
+            "index": 2,
+            "text": "enough to support action. A remote model can add evidence, but request admission and cellular delay determine when that"
+          },
+          {
+            "index": 3,
+            "text": "evidence becomes available."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "CAN intrusion detection must distinguish malicious activity from legitimate vehicle traffic while producing a warning early enough to support action. A remote model can add evidence, but request admission and cellular delay determine when that evidence becomes available.",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "CAN intrusion detection must distinguish malicious activity from legitimate vehicle traffic while producing a warning early enough to support action. A remote model can add evidence, but request admission and cellular delay determine when that evidence becomes available.",
+              "typeface": "Arial",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 23,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/zmp43yhs",
+      "id": "23",
+      "bbox": [
+        120,
+        1320,
+        1335,
+        36
+      ],
+      "geometry": "rect",
+      "text": "CONTRIBUTION",
+      "textPreview": "CONTRIBUTION",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Arial",
+        "color": "#F28C28",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.92,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "CONTRIBUTION"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "CONTRIBUTION",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#F28C28",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "CONTRIBUTION",
+              "typeface": "Arial",
+              "color": "#F28C28",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 24,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/oril0ny9",
+      "id": "24",
+      "bbox": [
+        120,
+        1360,
+        1335,
+        220
+      ],
+      "geometry": "rect",
+      "text": "• Preserves every local positive as a level-1 warning\n• Sends eligible positives to a separate cloud detector\n• Replays measured 5G delay under finite request budgets\n• Reports warning and confirmation timing separately",
+      "textPreview": "• Preserves every local positive as a level-1 warning | • Sends eligible positives to a separate cloud detector | • Replays measured 5G d...",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Arial",
+        "color": "#17212B",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "• Preserves every local positive as a level-1 warning"
+          },
+          {
+            "index": 2,
+            "text": "• Sends eligible positives to a separate cloud detector"
+          },
+          {
+            "index": 3,
+            "text": "• Replays measured 5G delay under finite request budgets"
+          },
+          {
+            "index": 4,
+            "text": "• Reports warning and confirmation timing separately"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "• Preserves every local positive as a level-1 warning",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• Preserves every local positive as a level-1 warning",
+              "typeface": "Arial",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "• Sends eligible positives to a separate cloud detector",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• Sends eligible positives to a separate cloud detector",
+              "typeface": "Arial",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "• Replays measured 5G delay under finite request budgets",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• Replays measured 5G delay under finite request budgets",
+              "typeface": "Arial",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 4,
+          "text": "• Reports warning and confirmation timing separately",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• Reports warning and confirmation timing separately",
+              "typeface": "Arial",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 25,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9srm9szu",
+      "id": "25",
+      "bbox": [
+        120,
+        1600,
+        1335,
+        58
+      ],
+      "geometry": "rect",
+      "text": "SYSTEM ARCHITECTURE",
+      "textPreview": "SYSTEM ARCHITECTURE",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Arial",
+        "color": "#0066A1",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "SYSTEM ARCHITECTURE"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "SYSTEM ARCHITECTURE",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#0066A1",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "SYSTEM ARCHITECTURE",
+              "typeface": "Arial",
+              "color": "#0066A1",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 26,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/mp03ydg3",
+      "id": "26",
+      "bbox": [
+        120,
+        1654,
+        1335,
+        7
+      ],
+      "geometry": "rect",
+      "fillColor": "#00A6D6",
+      "lineWidth": 0
+    },
+    {
+      "order": 27,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/wzyp4neh",
+      "id": "27",
+      "bbox": [
+        120,
+        1680,
+        1335,
+        610
+      ],
+      "alt": "Two-level V2C-Sentinel replay architecture",
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "asset": {
+        "assetId": "b7f232ad-ad97-42f6-8265-cf2e3a45028d",
+        "contentType": "image/png",
+        "byteLength": 143074
+      }
+    },
+    {
+      "order": 28,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4veloji5",
+      "id": "28",
+      "bbox": [
+        120,
+        2325,
+        1335,
+        58
+      ],
+      "geometry": "rect",
+      "text": "DATA AND MODELS",
+      "textPreview": "DATA AND MODELS",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Arial",
+        "color": "#0066A1",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "DATA AND MODELS"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "DATA AND MODELS",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#0066A1",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "DATA AND MODELS",
+              "typeface": "Arial",
+              "color": "#0066A1",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 29,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/pwn2xoza",
+      "id": "29",
+      "bbox": [
+        120,
+        2379,
+        1335,
+        7
+      ],
+      "geometry": "rect",
+      "fillColor": "#00A6D6",
+      "lineWidth": 0
+    },
+    {
+      "order": 30,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7ado3m1s",
+      "id": "30",
+      "bbox": [
+        120,
+        2405,
+        1335,
+        250
+      ],
+      "geometry": "rect",
+      "text": "ROAD CAN recordings\n• Development: 63,260 attack messages; 874,018 normal messages\n• Test: 38,003 attack messages; 106,939 normal messages\n• One evaluated attack episode and one normal recording per split",
+      "textPreview": "ROAD CAN recordings | • Development: 63,260 attack messages; 874,018 normal messages | • Test: 38,003 attack messages; 106,939 normal mes...",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Arial",
+        "color": "#17212B",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "ROAD CAN recordings"
+          },
+          {
+            "index": 2,
+            "text": "• Development: 63,260 attack messages; 874,018 normal messages"
+          },
+          {
+            "index": 3,
+            "text": "• Test: 38,003 attack messages; 106,939 normal messages"
+          },
+          {
+            "index": 4,
+            "text": "• One evaluated attack episode and one normal recording per split"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "ROAD CAN recordings",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "ROAD CAN recordings",
+              "typeface": "Arial",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "• Development: 63,260 attack messages; 874,018 normal messages",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• Development: 63,260 attack messages; 874,018 normal messages",
+              "typeface": "Arial",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "• Test: 38,003 attack messages; 106,939 normal messages",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• Test: 38,003 attack messages; 106,939 normal messages",
+              "typeface": "Arial",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 4,
+          "text": "• One evaluated attack episode and one normal recording per split",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• One evaluated attack episode and one normal recording per split",
+              "typeface": "Arial",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 31,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6p47uh0n",
+      "id": "31",
+      "bbox": [
+        120,
+        2670,
+        230,
+        34
+      ],
+      "geometry": "rect",
+      "text": "LOCAL",
+      "textPreview": "LOCAL",
+      "resolvedFontSize": 20.33,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Arial",
+        "color": "#0066A1",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.85,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "LOCAL"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "LOCAL",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#0066A1",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "LOCAL",
+              "typeface": "Arial",
+              "color": "#0066A1",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 32,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/tcv65wjy",
+      "id": "32",
+      "bbox": [
+        270,
+        2670,
+        1185,
+        75
+      ],
+      "geometry": "rect",
+      "text": "Logistic regression; 95th-percentile attack-class threshold; assumed 5 ms processing.",
+      "textPreview": "Logistic regression; 95th-percentile attack-class threshold; assumed 5 ms processing.",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Arial",
+        "color": "#17212B",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Logistic regression; 95th-percentile attack-class threshold; assumed 5 ms processing."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Logistic regression; 95th-percentile attack-class threshold; assumed 5 ms processing.",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Logistic regression; 95th-percentile attack-class threshold; assumed 5 ms processing.",
+              "typeface": "Arial",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 33,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8bmpwrid",
+      "id": "33",
+      "bbox": [
+        120,
+        2765,
+        230,
+        34
+      ],
+      "geometry": "rect",
+      "text": "CLOUD",
+      "textPreview": "CLOUD",
+      "resolvedFontSize": 20.33,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Arial",
+        "color": "#F28C28",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.85,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "CLOUD"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "CLOUD",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#F28C28",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "CLOUD",
+              "typeface": "Arial",
+              "color": "#F28C28",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 34,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/jmtozm1w",
+      "id": "34",
+      "bbox": [
+        270,
+        2765,
+        1185,
+        82
+      ],
+      "geometry": "rect",
+      "text": "Random forest; requests admitted by token bucket; assumed 10 ms processing plus replayed cellular delay.",
+      "textPreview": "Random forest; requests admitted by token bucket; assumed 10 ms processing plus replayed cellular delay.",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Arial",
+        "color": "#17212B",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Random forest; requests admitted by token bucket; assumed 10 ms processing plus replayed cellular delay."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Random forest; requests admitted by token bucket; assumed 10 ms processing plus replayed cellular delay.",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Random forest; requests admitted by token bucket; assumed 10 ms processing plus replayed cellular delay.",
+              "typeface": "Arial",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 35,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ylknqh0b",
+      "id": "35",
+      "bbox": [
+        1575,
+        1040,
+        1335,
+        58
+      ],
+      "geometry": "rect",
+      "text": "EXPERIMENTAL DESIGN",
+      "textPreview": "EXPERIMENTAL DESIGN",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Arial",
+        "color": "#0066A1",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "EXPERIMENTAL DESIGN"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "EXPERIMENTAL DESIGN",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#0066A1",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "EXPERIMENTAL DESIGN",
+              "typeface": "Arial",
+              "color": "#0066A1",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 36,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/lov61wj2",
+      "id": "36",
+      "bbox": [
+        1575,
+        1094,
+        1335,
+        7
+      ],
+      "geometry": "rect",
+      "fillColor": "#00A6D6",
+      "lineWidth": 0
+    },
+    {
+      "order": 37,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kn25srih",
+      "id": "37",
+      "bbox": [
+        1575,
+        1120,
+        1335,
+        170
+      ],
+      "geometry": "rect",
+      "text": "Chronological replay with request budgets of 1, 5, 10, 50 requests/s and an unrestricted condition. Each configuration is evaluated at 150 ms and 300 ms reporting deadlines. Local warnings remain visible regardless of cloud outcome.",
+      "textPreview": "Chronological replay with request budgets of 1, 5, 10, 50 requests/s and an unrestricted condition. Each configuration is evaluated at 15...",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Arial",
+        "color": "#17212B",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Chronological replay with request budgets of 1, 5, 10, 50 requests/s and an unrestricted condition. Each configuration is"
+          },
+          {
+            "index": 2,
+            "text": "evaluated at 150 ms and 300 ms reporting deadlines. Local warnings remain visible regardless of cloud outcome."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Chronological replay with request budgets of 1, 5, 10, 50 requests/s and an unrestricted condition. Each configuration is evaluated at 150 ms and 300 ms reporting deadlines. Local warnings remain visible regardless of cloud outcome.",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Chronological replay with request budgets of 1, 5, 10, 50 requests/s and an unrestricted condition. Each configuration is evaluated at 150 ms and 300 ms reporting deadlines. Local warnings remain visible regardless of cloud outcome.",
+              "typeface": "Arial",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 38,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bitov210",
+      "id": "38",
+      "bbox": [
+        1575,
+        1320,
+        1335,
+        58
+      ],
+      "geometry": "rect",
+      "text": "CONFIRMATION LATENCY",
+      "textPreview": "CONFIRMATION LATENCY",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Arial",
+        "color": "#0066A1",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "CONFIRMATION LATENCY"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "CONFIRMATION LATENCY",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#0066A1",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "CONFIRMATION LATENCY",
+              "typeface": "Arial",
+              "color": "#0066A1",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 39,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ahknmxkf",
+      "id": "39",
+      "bbox": [
+        1575,
+        1374,
+        1335,
+        7
+      ],
+      "geometry": "rect",
+      "fillColor": "#00A6D6",
+      "lineWidth": 0
+    },
+    {
+      "order": 40,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/9knmpobq",
+      "id": "40",
+      "bbox": [
+        1575,
+        1400,
+        1335,
+        640
+      ],
+      "alt": "First confirmation delay by request budget",
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "asset": {
+        "assetId": "9dbddb5f-47ba-43bf-a32e-424659ced063",
+        "contentType": "image/png",
+        "byteLength": 109165
+      }
+    },
+    {
+      "order": 41,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bqdszaxk",
+      "id": "41",
+      "bbox": [
+        1575,
+        2055,
+        1335,
+        190
+      ],
+      "geometry": "rect",
+      "text": "Development confirmation improves from 3.208 s at 1 request/s to 223.6 ms at 50 requests/s and 29.0 ms without admission limits. Test confirmation reaches 129.8 ms at 5–10 requests/s and 31.0 ms at 50 requests/s or unrestricted.",
+      "textPreview": "Development confirmation improves from 3.208 s at 1 request/s to 223.6 ms at 50 requests/s and 29.0 ms without admission limits. Test con...",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Arial",
+        "color": "#17212B",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Development confirmation improves from 3.208 s at 1 request/s to 223.6 ms at 50 requests/s and 29.0 ms without"
+          },
+          {
+            "index": 2,
+            "text": "admission limits. Test confirmation reaches 129.8 ms at 5–10 requests/s and 31.0 ms at 50 requests/s or unrestricted."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Development confirmation improves from 3.208 s at 1 request/s to 223.6 ms at 50 requests/s and 29.0 ms without admission limits. Test confirmation reaches 129.8 ms at 5–10 requests/s and 31.0 ms at 50 requests/s or unrestricted.",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Development confirmation improves from 3.208 s at 1 request/s to 223.6 ms at 50 requests/s and 29.0 ms without admission limits. Test confirmation reaches 129.8 ms at 5–10 requests/s and 31.0 ms at 50 requests/s or unrestricted.",
+              "typeface": "Arial",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 42,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/crm9sfy5",
+      "id": "42",
+      "bbox": [
+        1575,
+        2265,
+        1335,
+        58
+      ],
+      "geometry": "rect",
+      "text": "DEADLINE OUTCOMES",
+      "textPreview": "DEADLINE OUTCOMES",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Arial",
+        "color": "#0066A1",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "DEADLINE OUTCOMES"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "DEADLINE OUTCOMES",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#0066A1",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "DEADLINE OUTCOMES",
+              "typeface": "Arial",
+              "color": "#0066A1",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 43,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/dsva1kfa",
+      "id": "43",
+      "bbox": [
+        1575,
+        2319,
+        1335,
+        7
+      ],
+      "geometry": "rect",
+      "fillColor": "#00A6D6",
+      "lineWidth": 0
+    },
+    {
+      "order": 44,
+      "kind": "table",
+      "scope": "slide",
+      "aid": "tb/pwzqpgzm",
+      "id": "44",
+      "bbox": [
+        1575,
+        2345,
+        1335,
+        390
+      ],
+      "text": "Budget | Dev 150 | Dev 300 | Test 150 | Test 300\n1 req/s | 0/1 | 0/1 | 0/1 | 0/1\n5 req/s | 0/1 | 0/1 | 1/1 | 1/1\n10 req/s | 0/1 | 0/1 | 1/1 | 1/1\n50 req/s | 0/1 | 1/1 | 1/1 | 1/1\nUnrestricted | 1/1 | 1/1 | 1/1 | 1/1",
+      "textPreview": "Budget | Dev 150 | Dev 300 | Test 150 | Test 300 | 1 req/s | 0/1 | 0/1 | 0/1 | 0/1 | 5 req/s | 0/1 | 0/1 | 1/1 | 1/1 | 10 req/s | 0/1 | 0...",
+      "rows": 6,
+      "cols": 5,
+      "cells": [
+        {
+          "index": 1,
+          "row": 1,
+          "column": 1,
+          "bbox": [
+            1575,
+            2345,
+            267,
+            65
+          ],
+          "text": "Budget",
+          "textPreview": "Budget",
+          "fillColor": "#073B66",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Budget",
+              "resolvedTextStyle": {
+                "typeface": "Arial",
+                "color": "#FFFFFF",
+                "bold": true,
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Budget",
+                  "typeface": "Arial",
+                  "color": "#FFFFFF",
+                  "bold": true,
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "row": 1,
+          "column": 2,
+          "bbox": [
+            1842,
+            2345,
+            267,
+            65
+          ],
+          "text": "Dev 150",
+          "textPreview": "Dev 150",
+          "fillColor": "#073B66",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Dev 150",
+              "resolvedTextStyle": {
+                "typeface": "Arial",
+                "color": "#FFFFFF",
+                "bold": true,
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Dev 150",
+                  "typeface": "Arial",
+                  "color": "#FFFFFF",
+                  "bold": true,
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "row": 1,
+          "column": 3,
+          "bbox": [
+            2109,
+            2345,
+            267,
+            65
+          ],
+          "text": "Dev 300",
+          "textPreview": "Dev 300",
+          "fillColor": "#073B66",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Dev 300",
+              "resolvedTextStyle": {
+                "typeface": "Arial",
+                "color": "#FFFFFF",
+                "bold": true,
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Dev 300",
+                  "typeface": "Arial",
+                  "color": "#FFFFFF",
+                  "bold": true,
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "row": 1,
+          "column": 4,
+          "bbox": [
+            2376,
+            2345,
+            267,
+            65
+          ],
+          "text": "Test 150",
+          "textPreview": "Test 150",
+          "fillColor": "#073B66",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Test 150",
+              "resolvedTextStyle": {
+                "typeface": "Arial",
+                "color": "#FFFFFF",
+                "bold": true,
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Test 150",
+                  "typeface": "Arial",
+                  "color": "#FFFFFF",
+                  "bold": true,
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "row": 1,
+          "column": 5,
+          "bbox": [
+            2643,
+            2345,
+            267,
+            65
+          ],
+          "text": "Test 300",
+          "textPreview": "Test 300",
+          "fillColor": "#073B66",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Test 300",
+              "resolvedTextStyle": {
+                "typeface": "Arial",
+                "color": "#FFFFFF",
+                "bold": true,
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Test 300",
+                  "typeface": "Arial",
+                  "color": "#FFFFFF",
+                  "bold": true,
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "row": 2,
+          "column": 1,
+          "bbox": [
+            1575,
+            2410,
+            267,
+            65
+          ],
+          "text": "1 req/s",
+          "textPreview": "1 req/s",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "1 req/s",
+              "resolvedTextStyle": {
+                "typeface": "Arial",
+                "color": "#17212B",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "1 req/s",
+                  "typeface": "Arial",
+                  "color": "#17212B",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "row": 2,
+          "column": 2,
+          "bbox": [
+            1842,
+            2410,
+            267,
+            65
+          ],
+          "text": "0/1",
+          "textPreview": "0/1",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "0/1",
+              "resolvedTextStyle": {
+                "typeface": "Arial",
+                "color": "#17212B",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "0/1",
+                  "typeface": "Arial",
+                  "color": "#17212B",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "row": 2,
+          "column": 3,
+          "bbox": [
+            2109,
+            2410,
+            267,
+            65
+          ],
+          "text": "0/1",
+          "textPreview": "0/1",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "0/1",
+              "resolvedTextStyle": {
+                "typeface": "Arial",
+                "color": "#17212B",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "0/1",
+                  "typeface": "Arial",
+                  "color": "#17212B",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "row": 2,
+          "column": 4,
+          "bbox": [
+            2376,
+            2410,
+            267,
+            65
+          ],
+          "text": "0/1",
+          "textPreview": "0/1",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "0/1",
+              "resolvedTextStyle": {
+                "typeface": "Arial",
+                "color": "#17212B",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "0/1",
+                  "typeface": "Arial",
+                  "color": "#17212B",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "row": 2,
+          "column": 5,
+          "bbox": [
+            2643,
+            2410,
+            267,
+            65
+          ],
+          "text": "0/1",
+          "textPreview": "0/1",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "0/1",
+              "resolvedTextStyle": {
+                "typeface": "Arial",
+                "color": "#17212B",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "0/1",
+                  "typeface": "Arial",
+                  "color": "#17212B",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "row": 3,
+          "column": 1,
+          "bbox": [
+            1575,
+            2475,
+            267,
+            65
+          ],
+          "text": "5 req/s",
+          "textPreview": "5 req/s",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "5 req/s",
+              "resolvedTextStyle": {
+                "typeface": "Arial",
+                "color": "#17212B",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "5 req/s",
+                  "typeface": "Arial",
+                  "color": "#17212B",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 12,
+          "row": 3,
+          "column": 2,
+          "bbox": [
+            1842,
+            2475,
+            267,
+            65
+          ],
+          "text": "0/1",
+          "textPreview": "0/1",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "0/1",
+              "resolvedTextStyle": {
+                "typeface": "Arial",
+                "color": "#17212B",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "0/1",
+                  "typeface": "Arial",
+                  "color": "#17212B",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 13,
+          "row": 3,
+          "column": 3,
+          "bbox": [
+            2109,
+            2475,
+            267,
+            65
+          ],
+          "text": "0/1",
+          "textPreview": "0/1",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "0/1",
+              "resolvedTextStyle": {
+                "typeface": "Arial",
+                "color": "#17212B",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "0/1",
+                  "typeface": "Arial",
+                  "color": "#17212B",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 14,
+          "row": 3,
+          "column": 4,
+          "bbox": [
+            2376,
+            2475,
+            267,
+            65
+          ],
+          "text": "1/1",
+          "textPreview": "1/1",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "1/1",
+              "resolvedTextStyle": {
+                "typeface": "Arial",
+                "color": "#17212B",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "1/1",
+                  "typeface": "Arial",
+                  "color": "#17212B",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 15,
+          "row": 3,
+          "column": 5,
+          "bbox": [
+            2643,
+            2475,
+            267,
+            65
+          ],
+          "text": "1/1",
+          "textPreview": "1/1",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "1/1",
+              "resolvedTextStyle": {
+                "typeface": "Arial",
+                "color": "#17212B",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "1/1",
+                  "typeface": "Arial",
+                  "color": "#17212B",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 16,
+          "row": 4,
+          "column": 1,
+          "bbox": [
+            1575,
+            2540,
+            267,
+            65
+          ],
+          "text": "10 req/s",
+          "textPreview": "10 req/s",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "10 req/s",
+              "resolvedTextStyle": {
+                "typeface": "Arial",
+                "color": "#17212B",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "10 req/s",
+                  "typeface": "Arial",
+                  "color": "#17212B",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 17,
+          "row": 4,
+          "column": 2,
+          "bbox": [
+            1842,
+            2540,
+            267,
+            65
+          ],
+          "text": "0/1",
+          "textPreview": "0/1",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "0/1",
+              "resolvedTextStyle": {
+                "typeface": "Arial",
+                "color": "#17212B",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "0/1",
+                  "typeface": "Arial",
+                  "color": "#17212B",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 18,
+          "row": 4,
+          "column": 3,
+          "bbox": [
+            2109,
+            2540,
+            267,
+            65
+          ],
+          "text": "0/1",
+          "textPreview": "0/1",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "0/1",
+              "resolvedTextStyle": {
+                "typeface": "Arial",
+                "color": "#17212B",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "0/1",
+                  "typeface": "Arial",
+                  "color": "#17212B",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 19,
+          "row": 4,
+          "column": 4,
+          "bbox": [
+            2376,
+            2540,
+            267,
+            65
+          ],
+          "text": "1/1",
+          "textPreview": "1/1",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "1/1",
+              "resolvedTextStyle": {
+                "typeface": "Arial",
+                "color": "#17212B",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "1/1",
+                  "typeface": "Arial",
+                  "color": "#17212B",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 20,
+          "row": 4,
+          "column": 5,
+          "bbox": [
+            2643,
+            2540,
+            267,
+            65
+          ],
+          "text": "1/1",
+          "textPreview": "1/1",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "1/1",
+              "resolvedTextStyle": {
+                "typeface": "Arial",
+                "color": "#17212B",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "1/1",
+                  "typeface": "Arial",
+                  "color": "#17212B",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 21,
+          "row": 5,
+          "column": 1,
+          "bbox": [
+            1575,
+            2605,
+            267,
+            65
+          ],
+          "text": "50 req/s",
+          "textPreview": "50 req/s",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "50 req/s",
+              "resolvedTextStyle": {
+                "typeface": "Arial",
+                "color": "#17212B",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "50 req/s",
+                  "typeface": "Arial",
+                  "color": "#17212B",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 22,
+          "row": 5,
+          "column": 2,
+          "bbox": [
+            1842,
+            2605,
+            267,
+            65
+          ],
+          "text": "0/1",
+          "textPreview": "0/1",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "0/1",
+              "resolvedTextStyle": {
+                "typeface": "Arial",
+                "color": "#17212B",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "0/1",
+                  "typeface": "Arial",
+                  "color": "#17212B",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 23,
+          "row": 5,
+          "column": 3,
+          "bbox": [
+            2109,
+            2605,
+            267,
+            65
+          ],
+          "text": "1/1",
+          "textPreview": "1/1",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "1/1",
+              "resolvedTextStyle": {
+                "typeface": "Arial",
+                "color": "#17212B",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "1/1",
+                  "typeface": "Arial",
+                  "color": "#17212B",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 24,
+          "row": 5,
+          "column": 4,
+          "bbox": [
+            2376,
+            2605,
+            267,
+            65
+          ],
+          "text": "1/1",
+          "textPreview": "1/1",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "1/1",
+              "resolvedTextStyle": {
+                "typeface": "Arial",
+                "color": "#17212B",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "1/1",
+                  "typeface": "Arial",
+                  "color": "#17212B",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 25,
+          "row": 5,
+          "column": 5,
+          "bbox": [
+            2643,
+            2605,
+            267,
+            65
+          ],
+          "text": "1/1",
+          "textPreview": "1/1",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "1/1",
+              "resolvedTextStyle": {
+                "typeface": "Arial",
+                "color": "#17212B",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "1/1",
+                  "typeface": "Arial",
+                  "color": "#17212B",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 26,
+          "row": 6,
+          "column": 1,
+          "bbox": [
+            1575,
+            2670,
+            267,
+            65
+          ],
+          "text": "Unrestricted",
+          "textPreview": "Unrestricted",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "Unrestricted",
+              "resolvedTextStyle": {
+                "typeface": "Arial",
+                "color": "#17212B",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "Unrestricted",
+                  "typeface": "Arial",
+                  "color": "#17212B",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 27,
+          "row": 6,
+          "column": 2,
+          "bbox": [
+            1842,
+            2670,
+            267,
+            65
+          ],
+          "text": "1/1",
+          "textPreview": "1/1",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "1/1",
+              "resolvedTextStyle": {
+                "typeface": "Arial",
+                "color": "#17212B",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "1/1",
+                  "typeface": "Arial",
+                  "color": "#17212B",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 28,
+          "row": 6,
+          "column": 3,
+          "bbox": [
+            2109,
+            2670,
+            267,
+            65
+          ],
+          "text": "1/1",
+          "textPreview": "1/1",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "1/1",
+              "resolvedTextStyle": {
+                "typeface": "Arial",
+                "color": "#17212B",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "1/1",
+                  "typeface": "Arial",
+                  "color": "#17212B",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 29,
+          "row": 6,
+          "column": 4,
+          "bbox": [
+            2376,
+            2670,
+            267,
+            65
+          ],
+          "text": "1/1",
+          "textPreview": "1/1",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "1/1",
+              "resolvedTextStyle": {
+                "typeface": "Arial",
+                "color": "#17212B",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "1/1",
+                  "typeface": "Arial",
+                  "color": "#17212B",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 30,
+          "row": 6,
+          "column": 5,
+          "bbox": [
+            2643,
+            2670,
+            267,
+            65
+          ],
+          "text": "1/1",
+          "textPreview": "1/1",
+          "paragraphs": [
+            {
+              "index": 1,
+              "text": "1/1",
+              "resolvedTextStyle": {
+                "typeface": "Arial",
+                "color": "#17212B",
+                "alignment": "center"
+              },
+              "runs": [
+                {
+                  "index": 1,
+                  "text": "1/1",
+                  "typeface": "Arial",
+                  "color": "#17212B",
+                  "alignment": "center"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 45,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3mdsvqx8",
+      "id": "45",
+      "bbox": [
+        1575,
+        2755,
+        1335,
+        120
+      ],
+      "geometry": "rect",
+      "text": "Cell values are timely confirmations / evaluated attack episodes. With one episode per split, these are observed case outcomes rather than population detection rates.",
+      "textPreview": "Cell values are timely confirmations / evaluated attack episodes. With one episode per split, these are observed case outcomes rather tha...",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Arial",
+        "color": "#536270",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Cell values are timely confirmations / evaluated attack episodes. With one episode per split, these are observed case"
+          },
+          {
+            "index": 2,
+            "text": "outcomes rather than population detection rates."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Cell values are timely confirmations / evaluated attack episodes. With one episode per split, these are observed case outcomes rather than population detection rates.",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#536270",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Cell values are timely confirmations / evaluated attack episodes. With one episode per split, these are observed case outcomes rather than population detection rates.",
+              "typeface": "Arial",
+              "color": "#536270",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 46,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4nm9ovyt",
+      "id": "46",
+      "bbox": [
+        3030,
+        1040,
+        1335,
+        58
+      ],
+      "geometry": "rect",
+      "text": "FALSE-ALERT BURDEN",
+      "textPreview": "FALSE-ALERT BURDEN",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Arial",
+        "color": "#0066A1",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "FALSE-ALERT BURDEN"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "FALSE-ALERT BURDEN",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#0066A1",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "FALSE-ALERT BURDEN",
+              "typeface": "Arial",
+              "color": "#0066A1",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 47,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/povax0fe",
+      "id": "47",
+      "bbox": [
+        3030,
+        1094,
+        1335,
+        7
+      ],
+      "geometry": "rect",
+      "fillColor": "#00A6D6",
+      "lineWidth": 0
+    },
+    {
+      "order": 48,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/dc32h4bi",
+      "id": "48",
+      "bbox": [
+        3030,
+        1120,
+        1335,
+        520
+      ],
+      "alt": "Grouped false-alert burden by alert level",
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "asset": {
+        "assetId": "c5479c3e-014e-4576-812b-0ece9d2b12d2",
+        "contentType": "image/png",
+        "byteLength": 70635
+      }
+    },
+    {
+      "order": 49,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fytsrqxc",
+      "id": "49",
+      "bbox": [
+        3030,
+        1650,
+        1335,
+        180
+      ],
+      "geometry": "rect",
+      "text": "Level 1 produced approximately 3,568 and 3,620 grouped false alerts per hour on the development and test normal recordings. Level 2 produced no observed false alerts on those two short recordings. This does not establish a zero population false-alert rate.",
+      "textPreview": "Level 1 produced approximately 3,568 and 3,620 grouped false alerts per hour on the development and test normal recordings. Level 2 produ...",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Arial",
+        "color": "#17212B",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Level 1 produced approximately 3,568 and 3,620 grouped false alerts per hour on the development and test normal"
+          },
+          {
+            "index": 2,
+            "text": "recordings. Level 2 produced no observed false alerts on those two short recordings. This does not establish a zero"
+          },
+          {
+            "index": 3,
+            "text": "population false-alert rate."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Level 1 produced approximately 3,568 and 3,620 grouped false alerts per hour on the development and test normal recordings. Level 2 produced no observed false alerts on those two short recordings. This does not establish a zero population false-alert rate.",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Level 1 produced approximately 3,568 and 3,620 grouped false alerts per hour on the development and test normal recordings. Level 2 produced no observed false alerts on those two short recordings. This does not establish a zero population false-alert rate.",
+              "typeface": "Arial",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 50,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hojmds36",
+      "id": "50",
+      "bbox": [
+        3030,
+        1850,
+        1335,
+        58
+      ],
+      "geometry": "rect",
+      "text": "COMMUNICATION DEMAND",
+      "textPreview": "COMMUNICATION DEMAND",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Arial",
+        "color": "#0066A1",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "COMMUNICATION DEMAND"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "COMMUNICATION DEMAND",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#0066A1",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "COMMUNICATION DEMAND",
+              "typeface": "Arial",
+              "color": "#0066A1",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 51,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wnalknml",
+      "id": "51",
+      "bbox": [
+        3030,
+        1904,
+        1335,
+        7
+      ],
+      "geometry": "rect",
+      "fillColor": "#00A6D6",
+      "lineWidth": 0
+    },
+    {
+      "order": 52,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/4ja1kvq1",
+      "id": "52",
+      "bbox": [
+        3030,
+        1930,
+        1335,
+        490
+      ],
+      "alt": "Cloud requests by request budget and split",
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "asset": {
+        "assetId": "8b56f89a-cde6-487b-b4a1-cdde05a88a4e",
+        "contentType": "image/png",
+        "byteLength": 75393
+      }
+    },
+    {
+      "order": 53,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/u1s3id4f",
+      "id": "53",
+      "bbox": [
+        3030,
+        2425,
+        1335,
+        135
+      ],
+      "geometry": "rect",
+      "text": "Unrestricted replay admitted 49,539 development requests and 6,503 test requests. Finite budgets reduce network load but can delay the first useful confirmation beyond the application deadline.",
+      "textPreview": "Unrestricted replay admitted 49,539 development requests and 6,503 test requests. Finite budgets reduce network load but can delay the fi...",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Arial",
+        "color": "#17212B",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Unrestricted replay admitted 49,539 development requests and 6,503 test requests. Finite budgets reduce network load but"
+          },
+          {
+            "index": 2,
+            "text": "can delay the first useful confirmation beyond the application deadline."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Unrestricted replay admitted 49,539 development requests and 6,503 test requests. Finite budgets reduce network load but can delay the first useful confirmation beyond the application deadline.",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Unrestricted replay admitted 49,539 development requests and 6,503 test requests. Finite budgets reduce network load but can delay the first useful confirmation beyond the application deadline.",
+              "typeface": "Arial",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 54,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/90jm983u",
+      "id": "54",
+      "bbox": [
+        3030,
+        2580,
+        1335,
+        58
+      ],
+      "geometry": "rect",
+      "text": "WHAT THE EVIDENCE SUPPORTS",
+      "textPreview": "WHAT THE EVIDENCE SUPPORTS",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Arial",
+        "color": "#0066A1",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "WHAT THE EVIDENCE SUPPORTS"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "WHAT THE EVIDENCE SUPPORTS",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#0066A1",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "WHAT THE EVIDENCE SUPPORTS",
+              "typeface": "Arial",
+              "color": "#0066A1",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 55,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8zalg3m9",
+      "id": "55",
+      "bbox": [
+        3030,
+        2634,
+        1335,
+        7
+      ],
+      "geometry": "rect",
+      "fillColor": "#00A6D6",
+      "lineWidth": 0
+    },
+    {
+      "order": 56,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7yh47ylo",
+      "id": "56",
+      "bbox": [
+        3030,
+        2660,
+        1335,
+        190
+      ],
+      "geometry": "rect",
+      "text": "SUPPORTED\n• Immediate local warnings in both evaluated attack episodes\n• Cloud confirmation reduced observed false alerts on two normal recordings\n• Confirmation latency depends on request budget and recording",
+      "textPreview": "SUPPORTED | • Immediate local warnings in both evaluated attack episodes | • Cloud confirmation reduced observed false alerts on two norm...",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Arial",
+        "color": "#17212B",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "SUPPORTED"
+          },
+          {
+            "index": 2,
+            "text": "• Immediate local warnings in both evaluated attack episodes"
+          },
+          {
+            "index": 3,
+            "text": "• Cloud confirmation reduced observed false alerts on two normal recordings"
+          },
+          {
+            "index": 4,
+            "text": "• Confirmation latency depends on request budget and recording"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "SUPPORTED",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "SUPPORTED",
+              "typeface": "Arial",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "• Immediate local warnings in both evaluated attack episodes",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• Immediate local warnings in both evaluated attack episodes",
+              "typeface": "Arial",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "• Cloud confirmation reduced observed false alerts on two normal recordings",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• Cloud confirmation reduced observed false alerts on two normal recordings",
+              "typeface": "Arial",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 4,
+          "text": "• Confirmation latency depends on request budget and recording",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• Confirmation latency depends on request budget and recording",
+              "typeface": "Arial",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 57,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/mx83et4j",
+      "id": "57",
+      "bbox": [
+        3030,
+        2860,
+        1335,
+        120
+      ],
+      "geometry": "rect",
+      "text": "LIMITATIONS\nOne attack episode per split; short normal exposure; assumed processing times; both models executed on the development computer; no target-vehicle or production-cloud validation.",
+      "textPreview": "LIMITATIONS | One attack episode per split; short normal exposure; assumed processing times; both models executed on the development comp...",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Arial",
+        "color": "#B74636",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "LIMITATIONS"
+          },
+          {
+            "index": 2,
+            "text": "One attack episode per split; short normal exposure; assumed processing times; both models executed on the development"
+          },
+          {
+            "index": 3,
+            "text": "computer; no target-vehicle or production-cloud validation."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "LIMITATIONS",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#B74636",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "LIMITATIONS",
+              "typeface": "Arial",
+              "color": "#B74636",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "One attack episode per split; short normal exposure; assumed processing times; both models executed on the development computer; no target-vehicle or production-cloud validation.",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#B74636",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "One attack episode per split; short normal exposure; assumed processing times; both models executed on the development computer; no target-vehicle or production-cloud validation.",
+              "typeface": "Arial",
+              "color": "#B74636",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 58,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/lwzm583y",
+      "id": "58",
+      "bbox": [
+        0,
+        3020,
+        4494,
+        159
+      ],
+      "geometry": "rect",
+      "fillColor": "#073B66",
+      "lineWidth": 0
+    },
+    {
+      "order": 59,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kvqlc3md",
+      "id": "59",
+      "bbox": [
+        120,
+        3047,
+        290,
+        38
+      ],
+      "geometry": "rect",
+      "text": "Conclusion",
+      "textPreview": "Conclusion",
+      "resolvedFontSize": 23.67,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Arial",
+        "color": "#00A6D6",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.99,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Conclusion"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Conclusion",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#00A6D6",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Conclusion",
+              "typeface": "Arial",
+              "color": "#00A6D6",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 60,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cfuls3u9",
+      "id": "60",
+      "bbox": [
+        410,
+        3043,
+        2700,
+        65
+      ],
+      "geometry": "rect",
+      "text": "Cloud assistance can strengthen alert confidence, but it cannot replace the immediate local warning. Confirmation must be reported with its admission policy, communication delay, and deadline.",
+      "textPreview": "Cloud assistance can strengthen alert confidence, but it cannot replace the immediate local warning. Confirmation must be reported with i...",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Arial",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Cloud assistance can strengthen alert confidence, but it cannot replace the immediate local warning. Confirmation must be reported with its admission policy, communication delay, and deadline."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Cloud assistance can strengthen alert confidence, but it cannot replace the immediate local warning. Confirmation must be reported with its admission policy, communication delay, and deadline.",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#FFFFFF",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Cloud assistance can strengthen alert confidence, but it cannot replace the immediate local warning. Confirmation must be reported with its admission policy, communication delay, and deadline.",
+              "typeface": "Arial",
+              "color": "#FFFFFF",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 61,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/dg3m18bu",
+      "id": "61",
+      "bbox": [
+        3200,
+        3047,
+        1160,
+        55
+      ],
+      "geometry": "rect",
+      "text": "Sources: ROAD dataset [Verma et al., 2024] · CICV5G delay data [Zhang et al., 2026] · Saved V2C-Sentinel replay outputs",
+      "textPreview": "Sources: ROAD dataset [Verma et al., 2024] · CICV5G delay data [Zhang et al., 2026] · Saved V2C-Sentinel replay outputs",
+      "resolvedFontSize": 20.84,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Arial",
+        "color": "#DCEBF4",
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.87,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Sources: ROAD dataset [Verma et al., 2024] · CICV5G delay data [Zhang et al., 2026] · Saved V2C-Sentinel replay"
+          },
+          {
+            "index": 2,
+            "text": "outputs"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Sources: ROAD dataset [Verma et al., 2024] · CICV5G delay data [Zhang et al., 2026] · Saved V2C-Sentinel replay outputs",
+          "resolvedTextStyle": {
+            "typeface": "Arial",
+            "color": "#DCEBF4",
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Sources: ROAD dataset [Verma et al., 2024] · CICV5G delay data [Zhang et al., 2026] · Saved V2C-Sentinel replay outputs",
+              "typeface": "Arial",
+              "color": "#DCEBF4",
+              "alignment": "right"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

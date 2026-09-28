@@ -61,9 +61,9 @@ CONFIG = {
     "version": "1.0.0",
     "timestamp": None,  # filled at runtime
     "local_model": {
-        "file": "models/local_iforest.joblib",
+        "file": "models/local_lr.joblib",
         "algorithm": "LogisticRegression",
-        "note": "Misnamed file; actually sklearn LogisticRegression trained on train split"
+        "note": "sklearn LogisticRegression trained on the train split"
     },
     "cloud_model": {
         "file": "models/cloud_rf.joblib",
@@ -94,7 +94,7 @@ CONFIG = {
     ]
 }
 
-RESULTS_DIR = Path("results/final")
+RESULTS_DIR = Path("results/cloud_confirmation")
 RESULTS_DIR.mkdir(parents=True, exist_ok=True)
 
 
@@ -694,7 +694,7 @@ def main():
 
     runs_df = pd.DataFrame(all_rows)
     runs_df.to_csv(RESULTS_DIR / "all_runs.csv", index=False)
-    print(f"  Saved {len(runs_df)} individual runs → results/final/all_runs.csv")
+    print(f"  Saved {len(runs_df)} individual runs → results/cloud_confirmation/all_runs.csv")
 
     # --- Aggregate summary ---
     # For stochastic policies (periodic, random, combined), average over seeds/offsets
@@ -714,14 +714,14 @@ def main():
     ).reset_index()
 
     summary.to_csv(RESULTS_DIR / "summary.csv", index=False)
-    print(f"  Saved summary → results/final/summary.csv")
+    print(f"  Saved summary → results/cloud_confirmation/summary.csv")
 
     # --- Save config ---
     CONFIG['total_runs'] = total_runs
     CONFIG['total_time_s'] = time.time() - t_start
     with open(RESULTS_DIR / "config.json", 'w') as f:
         json.dump(CONFIG, f, indent=2, default=str)
-    print(f"  Saved config → results/final/config.json")
+    print(f"  Saved config → results/cloud_confirmation/config.json")
 
     # --- Print key results ---
     print("\n" + "=" * 70)

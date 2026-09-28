@@ -9,7 +9,7 @@ def benchmark_models():
     print("Loading models and data...")
     try:
         scaler = load("models/scaler.joblib")
-        local_model = load("models/local_iforest.joblib")
+        local_model = load("models/local_lr.joblib")
         cloud_model = load("models/cloud_rf.joblib")
     except Exception as e:
         print(f"Error loading models: {e}")
@@ -35,7 +35,7 @@ def benchmark_models():
     X_scaled = scaler.transform(X_raw)
     scale_time = time.perf_counter() - start
     
-    # 1. Benchmark Local Model (Isolation Forest)
+    # 1. Benchmark Local Model (Logistic Regression)
     start = time.perf_counter()
     # Batch predict
     if hasattr(local_model, 'score_samples'):
@@ -55,7 +55,7 @@ def benchmark_models():
     print("Note: These are times on the development machine, not on a constrained CAN gateway.")
     print(f"Number of messages: {len(X_raw)}")
     print(f"Scaling time: {scale_time:.4f} sec ({scale_time/len(X_raw)*1e6:.2f} us/msg)")
-    print(f"Local Model (Isolation Forest / DT) batch inference: {local_batch_time:.4f} sec ({local_batch_time/len(X_raw)*1e6:.2f} us/msg)")
+    print(f"Local Model (Logistic Regression) batch inference: {local_batch_time:.4f} sec ({local_batch_time/len(X_raw)*1e6:.2f} us/msg)")
     print(f"Cloud Model (Random Forest) batch inference: {cloud_batch_time:.4f} sec ({cloud_batch_time/len(X_raw)*1e6:.2f} us/msg)")
     
     # Single message inference (to simulate per-message latency)

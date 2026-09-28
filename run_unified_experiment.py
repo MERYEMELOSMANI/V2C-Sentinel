@@ -61,9 +61,9 @@ CONFIG = {
     "version": "1.0.0",
     "timestamp": None,  # filled at runtime
     "local_model": {
-        "file": "models/local_iforest.joblib",
+        "file": "models/local_lr.joblib",
         "algorithm": "LogisticRegression",
-        "note": "Misnamed file; actually sklearn LogisticRegression trained on train split"
+        "note": "sklearn LogisticRegression trained on the train split"
     },
     "cloud_model": {
         "file": "models/cloud_rf.joblib",
